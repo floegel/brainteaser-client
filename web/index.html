@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Brainteaser</title>
+        <link rel="shortcut icon" href="static/images/favicon.ico" type="image/vnd.microsoft.icon"/>
+        <link href='https://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Skranji' rel='stylesheet' type='text/css'/>
+        <link href="static/css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="app-wrap">
+                <div id="stage">
+                    <div id="training-view">
+                        <div class="info-bar">
+                            <div class="col">
+                                <div class="fancy">Kacheln:</div>
+                                <div class="panel" id="max-selected-tiles-count">4</div>
+                            </div>
+                            <div class="col">
+                                <div class="fancy">Runde:</div>
+                                <div class="panel">
+                                    <span id="exercise-num">0</span> / <span id="max-exercise-num">?</span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="fancy">Punkte:</div>
+                                <div class="panel" id="score">0</div>
+                            </div>
+                            <div class="col">
+                                <div class="fancy">Zuletzt:</div>
+                                <div class="panel" id="last-exercise-score">0</div>
+                            </div>
+                        </div>
+                        <div class="row-container">
+                            <div class="row-wrapper"></div>
+                        </div>
+                        <div id="tutorial">
+                            <h2>Anleitung</h2>
+                            <p class="small-text">
+                                Nachdem Sie eine Runde gestartet haben, leuchten auf dem Raster Kacheln
+                                farbig auf. Diese sollen Sie sich merken und durch Klicken
+                                auf dem Raster markieren. Die Reihenfolge spielt dabei keine Rolle.
+                                Für jede korrekt markierte Kachel erhalten Sie Punkte.
+                                Nachdem Sie alle Runden absolviert haben, können Sie Ihren Punktestand
+                                mit den Highscores vergleichen.<br/>
+                                Viel Spaß!
+                            </p>
+                        </div>
+                        <div id="training-finished-wrapper" class="hidden">
+                            <h2>Training beendet</h2>
+                            <div>
+                                <p>Herzlichen Glückwunsch, Sie haben alle Runden beendet!</p>
+                                <p>Ihr Username lautet:<br/>
+                                <i><span id="training-id"></span></i></p>
+                                <p>Auf der Highscore-Liste können Sie nachsehen, ob
+                                Sie es in die Top 10 geschafft haben.</p>
+                                <p><a href="#" class="show-highscores">Zu den Highscores</a></p>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button id="start-exercise" class="hidden">Runde starten</button>
+                            <button id="finish-training" class="hidden">Weiter</button>
+                        </div>
+                    </div>    
+                    <div id="highscores-view" class="hidden">
+                        <h1>Highscores</h1>
+                        <div id="highscores-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                &copy; <a href="http://www.jan-floegel.de" target="_blank">Jan Flögel</a> |
+                <a href="http://www.jan-floegel.de/impressum/" target="_blank">Impressum</a> |
+                <a href="http://www.jan-floegel.de/datenschutz/" target="_blank">Datenschutz</a> |
+                <a href="#" class="show-highscores">Highscores</a> |
+                Brainteaser
+            </div>
+        </div>
+        <div id="scripts">
+            <script src="static/js/libs/jquery-1.12.2.min.js" type="text/javascript"></script>
+            <script src="static/js/app.js" type="text/javascript"></script>
+        </div>
+        <div id="loading-animation">
+            <div class="inner">
+                <div class="animation"></div>
+                <div class="message"></div>
+            </div>
+        </div>
+    </body>
+</html>
