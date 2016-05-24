@@ -1,10 +1,10 @@
 # Brainteaser-Client
 
-Ein erweitertes Code-Sample von [Jan Flögel](http://jan-floegel.de)
-Das Web-Frontend zur [Brainteaser-API](http://github.com/floegel/brainteaser-api)
+Ein erweitertes Code-Sample von <a href="http://jan-floegel.de" target="_blank">Jan Flögel</a><br/>
+Das Web-Frontend zur <a href="http://github.com/floegel/brainteaser-api" target="_blank">Brainteaser-API</a>
 
 #### Technologien:
-    HTML, Javascript, CSS(3), nginx, Vagrant
+    Javascript, HTML, CSS(3), nginx, Vagrant, Shell
 
 #### Frameworks/Tools:
     jQuery
